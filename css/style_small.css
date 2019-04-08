@@ -16,6 +16,8 @@ body {
 
 
 main {
+  /* background-color: #374046; */
+  /* background-color: #090909; */
   background-color: white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -23,30 +25,24 @@ main {
 }
 
 footer {
-  bottom: 0;
-  height: 50px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  /* padding: 50px; */
-  display: block;
+  bottom: 200px;
+  background-color: rgb(79, 79, 79);
 }
 
 nav {
     position: fixed;
     top: 0;
-    left: -353px;
+    left: 0;
     transition-duration: 1s;
-}
-
-nav:hover {
-  left: 0;
+    font-size: 8px;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     width: 100%;
+    border: 5px solid red;
 }
 
 nav ul li {
@@ -68,10 +64,16 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.383);
+    /* background-color: purple; */
+}
+
+nav ul li:last-child(2) {
+    border-right: 2px white solid;
 }
 
 nav ul li:last-child {
-    border-right: 2px white solid;
+  /* display: none; */
+  background-color: purple;
 }
 
 h1 {
@@ -106,83 +108,4 @@ h1 {
     z-index: -1;
     position: static;
     /* margin-bottom: 100vh; */
-}
-
-
-@media screen and (min-width: 0px) {
-
-   nav {
-      left: -500px;
-   }
-
-   .movenav nav {
-     left: 0px;
-   }
-
-   #menu {
-      right: 0;
-      top: 0;
-      height: 30px;
-      position: fixed;
-      padding: 10px;
-      padding-left: 15px;
-      background-color: white;
-      border-left: 2px solid black;
-      border-bottom: 2px solid black;
-      border-bottom-left-radius: 6px;
-      cursor: pointer;
-   }
-
-   .line1, .line2, .line3 {
-      width: 20px;
-      height: 3px;
-      margin: 6px 0;
-      color: purple;
-      background-color: blue;
-      z-index: 2;
-      transition: 0.4s;
-    }
-
-
-    /* Rotate first bar */
-    .change .line1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-      transform: rotate(-45deg) translate(-9px, 6px) ;
-    }
-
-    /* Fade out the second bar */
-    .change .line2 {
-      opacity: 0;
-    }
-
-    /* Rotate last bar */
-    .change .line3 {
-      -webkit-transform: rotate(45deg) translate(-10px, -0px) ;
-      transform: rotate(45deg) translate(-8px, -8px) ;
-    }
-
-
-  h1 {
-      font-size: 20px;
-      padding: 20px;
-  }
-
-  .content {
-      /* grid-template-columns: 1fr 5fr 1fr; */
-      /* display: inline-grid; */
-      padding: 15px;
-      font-size: 20px;
-  }
-
-  .content .text {
-      /* grid-column: 2 / 3; */
-      float: left;
-      /* background-color: ; */
-      /* background-color: rgb(39, 39, 39); */
-      border-radius: 8px;
-      /* color: white; */
-      padding: 15px;
-  }
-
-
 }
