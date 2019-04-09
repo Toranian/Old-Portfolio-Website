@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Isaac Morrow</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Load the JavaScript -->
     <script src="js/main.js"></script>
     <noscript>The JavaScript file was not able to load.</noscript>
+
+    <!-- Load the CSS depending on the size of the screen -->
+    <link rel="stylesheet" href="css/style_small.css" media="screen and (max-width: 1200px)">
+    <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 1200px)">
 </head>
 
 <body>
 
+    <!-- Navbar and background image -->
     <header id="home">
-        <nav id="navbar" class="movenav">
+        <nav id="navbar" class="">
             <ul>
                 <li><a href="#home" onclick="toggleNav()">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#chevron">❱</a></li>
+                <li><a href="#about" onclick="toggleNav()">About</a></li>
+                <li><a href="#resume" onclick="toggleNav()">Resume</a></li>
+                <li><a href="#projects" onclick="toggleNav()">Projects</a></li>
+                <li><a id="chevron" onclick="toggleNav()">❱</a></li>
             </ul>
         </nav>
         <div id="backgroundimage"></div>
@@ -33,25 +39,27 @@
 
     </header>
 
+    <!-- Contains the main contents of the website -->
     <main>
+        <!-- About me -->
         <section id="about">
-            <h1 align="center">Who is Isaac Morrow?</h1>
+            <h1 align="center">Who am I?</h1>
             <div class="content">
                 <p class="text">
-                        Hi, my name is Isaac Morrow, and I’m a front-end web developer. I’m currently enrolled in Timberline Secondary School and in grade 11. I have a passion for the outdoors, philosophy, and especially, programming. At school, I excel at getting straight A’s and achieving the Principal's Honor Roll, while also understanding the subject matter. In March of 2019, I won the regional web development competition for skills Canada, after only 3 months after beginning my web development journey. I am excited to see how my skills will improve in later projects and creations.
+                        My name is Isaac Morrow, and I’m a front-end web developer. I’m currently enrolled in Timberline Secondary School and in grade 11. I have a passion for the outdoors, philosophy, and especially programming. At school, I excel at getting straight A’s and achieving the Principal's Honor Roll, while also understanding the subject matter. In March of 2019, I won the regional web development competition for skills Canada, after only 3 months since beginning my web development journey. I am excited to see how my skills will improve in later projects and creations.
                 </p>
             </div>
         </section>
 
+        <!--Resume Section-->
         <section id="resume">
             <h1 align="center">Resume</h1>
             <div class="content">
                 <p class="text">
-                    If you're interested in hiring me, you can download my resume here: 
+                    If you're interested in hiring me, you can download my resume here:
                 </p>
-                <a align="center" href="text/resume.rtf" id="resume-link">Download</a>
             </div>
-
+            <a align="center" href="text/resume.rtf" id="resume-link">Download</a>
         </section>
 
     </main>

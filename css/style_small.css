@@ -14,10 +14,20 @@ body {
     color: black;
 }
 
+#backgroundimage {
+  background-image: url("../img/isaacmorrow.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+  position: static;
+  transition-duration: 1s;
+  /* margin-bottom: 100vh; */
+}
 
 main {
-  /* background-color: #374046; */
-  /* background-color: #090909; */
   background-color: white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -25,87 +35,186 @@ main {
 }
 
 footer {
-  bottom: 200px;
-  background-color: rgb(79, 79, 79);
+  bottom: 0;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  /* padding: 50px; */
+  display: block;
+}
+
+#resume-link {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 128, 202, 0.5);
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100px;
+}
+
+
+/* This code will change the CSS depending on the size of the browser. Will change for mobile. */
+
+
+nav, nav ul, nav ul li, nav ul li a {
+  all: unset;
+  transition-duration: 1s;
+  color: white;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition-duration: 1s;
-    font-size: 8px;
-    width: 100%;
+  position: fixed;
+  /* transition-duration: 1s; */
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    width: 100%;
-    border: 5px solid red;
-}
-
-nav ul li {
-    color: white;
-    display: inline;
-    float: left;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition-duration: 1s;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    cursor: pointer;
-    transition-duration: 0.5s;
-    display: block;
-    border-bottom: 2px white solid;
-    border-top: 2px white solid;
+  display: block;
+  transition-duration: 1s;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 2px solid white;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.383);
-    /* background-color: purple; */
+nav ul li a:first{
+  border-top: 2px solid white;
 }
 
-nav ul li:last-child(2) {
-    border-right: 2px white solid;
+/* nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-nav ul li:last-child {
-  /* display: none; */
-  background-color: purple;
+nav ul li {
+  color: white;
+  float: left;
 }
 
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  display: block;
+}
+
+nav ul li a:last-child {
+  all: unset;
+  display: hidden;
+} */
+
+#chevron {
+  visibility: hidden !important;
+}
+
+/* Blurs the background image when navbar opened. */
+.blur {
+  -webkit-filter: blur(3px);
+  transition-duration: 1s;
+}
+
+/* Moves the navigation bar. Slides out from the left. */
+.movenav {
+ left: 0;
+ /* display: block; */
+ transition-duration: 1s;
+}
+
+/* burger menu */
+#menu {
+  right: 0;
+  top: 0;
+  height: 30px;
+  position: fixed;
+  padding: 10px;
+  padding-top: 5px;
+  padding-left: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border-left: 2px solid black; */
+  /* border-bottom: 2px solid black; */
+  border-bottom-left-radius: 6px;
+  cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+  width: 20px;
+  height: 3px;
+  margin: 6px 0;
+  background-color: white;
+  z-index: 2;
+  transition: 0.4s;
+}
+
+
+/* Rotate first bar */
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-10px, 3rpx) ;
+  transform: rotate(-45deg) translate(-10px, 3px) ;
+}
+
+/* Fade out the second bar */
+.change .line2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-10px, 3px) ;
+  transform: rotate(45deg) translate(-10px, -3px) ;
+}
+
+/* Headers */
 h1 {
-    font-size: 40px;
-    padding: 20px;
+    font-size: 25px;
+    padding: 15px;
 }
 
+h2 {
+  font-size: 16px;
+}
+
+/* Creates the padding and stuff for the content */
 .content {
-    grid-template-columns: 1fr 3fr 1fr;
-    display: inline-grid;
-    padding: 15px;
-    font-size: 20px;
+  padding: 5px;
+  padding-top: 0;
+  font-size: 20px;
 }
 
-.content .text {
-    grid-column: 2 / 3;
-    float: left;
-    /* background-color: ; */
-    /* background-color: rgb(39, 39, 39); */
-    border-radius: 8px;
-    /* color: white; */
-    padding: 15px;
+/* Applies styling to everything in .content */
+.content > * {
+  /* grid-column: 2 / 3; */
+  /* grid-template-columns: unset; */
+  font-size: 15px;
+  line-height: 1.4em;
+  word-spacing: 0.2em;
+  text-align: left;
 }
 
-#backgroundimage {
-    background-image: url("../img/isaacmorrow.jpg");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    background-size: cover;
-    z-index: -1;
-    position: static;
-    /* margin-bottom: 100vh; */
+/* Download link for resume */
+#resume-link {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 128, 202, 0.5) !important;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100px;
 }

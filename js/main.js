@@ -14,8 +14,9 @@
 function toggleNav() {
   var navbar = document.querySelector("#navbar")
   var menu = document.querySelector("#menu")
-  
+  var backgroundimage = document.querySelector("#backgroundimage")
 
+  backgroundimage.classList.toggle("blur")
   menu.classList.toggle("change");
   navbar.classList.toggle("movenav")
   console.log("clicked.")
