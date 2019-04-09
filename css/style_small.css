@@ -24,7 +24,16 @@ body {
   z-index: -1;
   position: static;
   transition-duration: 1s;
-  /* margin-bottom: 100vh; */
+}
+
+#resume-link {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 128, 202, 0.5);
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100px;
 }
 
 main {
@@ -44,22 +53,11 @@ footer {
   display: block;
 }
 
-#resume-link {
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0, 128, 202, 0.5);
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  width: 100px;
-}
 
-
-/* This code will change the CSS depending on the size of the browser. Will change for mobile. */
 
 nav {
   position: fixed;
-  /* transition-duration: 1s; */
+  transition-duration: 1s;
   height: 100vh;
   width: 100%;
   left: -100%;
@@ -70,12 +68,14 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  transition-duration: 1s;
+  /* transition-duration: 1s; */
 }
 
 nav ul li a {
   display: block;
-  transition-duration: 1s;
+  text-decoration: none;
+  color: white;
+  /* transition-duration: 1s; */
   padding: 30px;
   text-align: center;
   border-bottom: 2px solid white;
@@ -115,11 +115,11 @@ nav ul li a:last-child {
 }
 
 /* Blurs the background image when navbar opened. */
-.blur {
+/* .blur {
   -webkit-filter: blur(3px);
   transition-duration: 1s;
   z-index: -1;
-}
+} */
 
 /* Moves the navigation bar. Slides out from the left. */
 .movenav {
