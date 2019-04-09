@@ -163,3 +163,8 @@ h2 {
   word-spacing: 0.2em;
   text-align: left;
 }
+
+/* DELETE THIS LATER */
+#projects {
+  display: none;
+}
