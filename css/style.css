@@ -124,5 +124,32 @@ p {
   text-align: center;
   padding: 10px;
   border-radius: 8px;
-  width: 100px;
+  width: 100vh;
+}
+
+#projects div {
+  display: grid;
+  grid-gap: 1em;
+  margin: 2em;
+  margin-bottom: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition-duration: 0.5s;
+  border-radius: 8px;
+}
+
+/* #projects div {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition-duration: 0.5s;
+  border-radius: 8px;
+  height: 300px;
+} */
+
+#projects div p {
+  padding: 15px;
+}
+
+#projects div:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px rgba(125, 125, 125, 0.7);
 }

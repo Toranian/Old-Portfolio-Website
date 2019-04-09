@@ -15,7 +15,7 @@ body {
 }
 
 #backgroundimage {
-  background-image: url("../img/isaacmorrow.jpg");
+  background-image: url("../img/img_small/isaacmorrow.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,12 +28,8 @@ body {
 
 #resume-link {
   text-decoration: none;
-  color: white;
-  background-color: rgba(0, 128, 202, 0.5);
+  width: 100%;
   text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  width: 100px;
 }
 
 main {
@@ -83,33 +79,6 @@ nav ul li a {
   cursor: pointer;
 }
 
-
-/* nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-nav ul li {
-  color: white;
-  float: left;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  cursor: pointer;
-  transition-duration: 0.5s;
-  display: block;
-}
-
-nav ul li a:last-child {
-  all: unset;
-  display: hidden;
-} */
-
 #chevron {
   visibility: hidden !important;
 }
@@ -124,7 +93,6 @@ nav ul li a:last-child {
 /* Moves the navigation bar. Slides out from the left. */
 .movenav {
  left: 0;
- /* display: block; */
  transition-duration: 1s;
 }
 
@@ -190,21 +158,8 @@ h2 {
 
 /* Applies styling to everything in .content */
 .content > * {
-  /* grid-column: 2 / 3; */
-  /* grid-template-columns: unset; */
   font-size: 15px;
   line-height: 1.4em;
   word-spacing: 0.2em;
   text-align: left;
-}
-
-/* Download link for resume */
-#resume-link {
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0, 128, 202, 0.5) !important;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  width: 100px;
 }
