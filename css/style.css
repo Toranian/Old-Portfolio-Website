@@ -14,7 +14,6 @@ body {
     color: black;
 }
 
-
 main {
   background-color: white;
   border-top-left-radius: 15px;
@@ -109,7 +108,7 @@ h1 {
 }
 
 
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 1200px) {
 
    nav {
       left: -500px;
@@ -125,20 +124,20 @@ h1 {
       height: 30px;
       position: fixed;
       padding: 10px;
+      padding-top: 5px;
       padding-left: 15px;
-      background-color: white;
-      border-left: 2px solid black;
-      border-bottom: 2px solid black;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* border-left: 2px solid black; */
+      /* border-bottom: 2px solid black; */
       border-bottom-left-radius: 6px;
       cursor: pointer;
-   }
+   } 
 
    .line1, .line2, .line3 {
       width: 20px;
       height: 3px;
       margin: 6px 0;
-      color: purple;
-      background-color: blue;
+      background-color: white;
       z-index: 2;
       transition: 0.4s;
     }
@@ -161,28 +160,40 @@ h1 {
       transform: rotate(45deg) translate(-8px, -8px) ;
     }
 
+    h1 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    h2 {
+      font-size: 16px;
+    }
 
-  h1 {
-      font-size: 20px;
-      padding: 20px;
-  }
-
-  .content {
-      /* grid-template-columns: 1fr 5fr 1fr; */
-      /* display: inline-grid; */
+    .content {
+      grid-template-columns: 1fr 3fr 1fr;
+     
+      /* grid-template-columns: none; */
+      display: inline-grid;
       padding: 15px;
       font-size: 20px;
-  }
+      margin-right: 5px;
+      margin-left: 5px; 
+    }
 
-  .content .text {
-      /* grid-column: 2 / 3; */
-      float: left;
-      /* background-color: ; */
-      /* background-color: rgb(39, 39, 39); */
-      border-radius: 8px;
-      /* color: white; */
-      padding: 15px;
-  }
+    .content > * {
+      grid-column: 2 / 3;
+      grid-template-columns: unset;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #resume-link {
+      text-decoration: none;
+      color: white;
+      background-color: rgba(0, 128, 202, 0.5) !important;
+
+    }
+
+  
 
 
 }
