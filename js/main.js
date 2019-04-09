@@ -11,9 +11,13 @@
 //   }
 // }
 
-function toggleNav(element) {
-  element.classList.toggle("change");
-  navbar = document.classList.toggle("movenav")
+function toggleNav() {
+  var navbar = document.querySelector("#navbar")
+  var menu = document.querySelector("#menu")
+  
+
+  menu.classList.toggle("change");
+  navbar.classList.toggle("movenav")
   console.log("clicked.")
 }
 

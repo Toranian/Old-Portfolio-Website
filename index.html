@@ -15,17 +15,17 @@
     <header id="home">
         <nav id="navbar" class="movenav">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" onclick="toggleNav()">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="">❱</a></li>
+                <li><a href="#chevron">❱</a></li>
             </ul>
         </nav>
         <div id="backgroundimage"></div>
 
         <!-- Will only load for smaller screens -->
-        <div id="menu" onclick="toggleNav(this)">
+        <div id="menu" onclick="toggleNav()">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
@@ -38,7 +38,7 @@
             <h1 align="center">Who is Isaac Morrow?</h1>
             <div class="content">
                 <p class="text">
-                        Isaac Morrow is currently enrolled in Timberline Secondary School and is in grade 11. He has a passion for technology and programming. In 2019, he won the Skills Canada Web Development competition, coming first place in the regionals. At school, he excels at getting straight A’s and achieving the principal's honor roll, while also understanding the subject matter.
+                        Hi, my name is Isaac Morrow, and I’m a front-end web developer. I’m currently enrolled in Timberline Secondary School and in grade 11. I have a passion for the outdoors, philosophy, and especially, programming. At school, I excel at getting straight A’s and achieving the Principal's Honor Roll, while also understanding the subject matter. In March of 2019, I won the regional web development competition for skills Canada, after only 3 months after beginning my web development journey. I am excited to see how my skills will improve in later projects and creations.
                 </p>
             </div>
         </section>
@@ -46,7 +46,10 @@
         <section id="resume">
             <h1 align="center">Resume</h1>
             <div class="content">
-                <a align="center" href="text/resume.rtf" id="resume-link" class="text" style="text-decoration: none;">Resume</a>
+                <p class="text">
+                    If you're interested in hiring me, you can download my resume here: 
+                </p>
+                <a align="center" href="text/resume.rtf" id="resume-link">Download</a>
             </div>
 
         </section>
