@@ -57,13 +57,6 @@ footer {
 
 /* This code will change the CSS depending on the size of the browser. Will change for mobile. */
 
-
-nav, nav ul, nav ul li, nav ul li a {
-  all: unset;
-  transition-duration: 1s;
-  color: white;
-}
-
 nav {
   position: fixed;
   /* transition-duration: 1s; */
@@ -74,7 +67,6 @@ nav {
 }
 
 nav ul {
-  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -91,9 +83,6 @@ nav ul li a {
   cursor: pointer;
 }
 
-nav ul li a:first{
-  border-top: 2px solid white;
-}
 
 /* nav ul {
   list-style-type: none;
@@ -129,6 +118,7 @@ nav ul li a:last-child {
 .blur {
   -webkit-filter: blur(3px);
   transition-duration: 1s;
+  z-index: -1;
 }
 
 /* Moves the navigation bar. Slides out from the left. */
