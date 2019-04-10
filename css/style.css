@@ -44,6 +44,8 @@ footer {
   display: block;
 }
 
+
+/* Navigation bar */
 nav {
     position: fixed;
     top: 0;
@@ -88,29 +90,19 @@ nav ul li:last-child {
 
 h1 {
     font-size: 40px;
-    padding-top: 20px;
+    padding-top: 30px;
+    margin: 0 auto;
 }
 
 .content {
-    grid-template-columns: 1fr 3fr 1fr;
-    display: inline-grid;
-    /* padding: 15px; */
     font-size: 20px;
-}
-
-.content > * {
-    grid-column: 2 / 3;
-    /* float: left; */
-    /* background-color: ; */
-    /* background-color: rgb(39, 39, 39); */
-    border-radius: 8px;
-    /* color: white; */
+    margin: 0 25%;
+    border-radius: 8px;    
     padding: 15px;
     text-align: justify;
 }
 
 p {
-  /* font-family: '', sans-serif; */
   font-size: 20px;
   line-height: 1.4em;
   word-spacing: 0.2em;
@@ -124,19 +116,21 @@ p {
   text-align: center;
   padding: 10px;
   border-radius: 8px;
-  width: 100vh;
+  width: 100px;
+  display: block;
+  margin: 0px auto;
 }
 
-#projects div {
-  display: grid;
-  grid-gap: 1em;
-  margin: 2em;
-  margin-bottom: 2em;
-  grid-template-columns: 1fr 1fr 1fr;
+#projects .project {
+  margin: 0 25%;
+}
+
+.project {
   background-color: rgba(0, 0, 0, 0.4);
   transition-duration: 0.5s;
   border-radius: 8px;
-  width: 500px;
+  /* width: 33%; */
+  display: inline-block;
 }
 
 /* #projects div {
@@ -146,11 +140,15 @@ p {
   height: 300px;
 } */
 
-#projects div p {
+.project p {
   padding: 15px;
 }
 
-#projects div:hover {
+.project:hover {
   transform: translateY(-10px);
   box-shadow: 10px 10px rgba(125, 125, 125, 0.7);
+}
+
+.test {
+  margin: 0 auto;
 }
