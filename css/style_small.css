@@ -28,8 +28,10 @@ body {
 
 #resume-link {
   text-decoration: none;
-  width: 100%;
+  width: 100vh;
   text-align: center;
+  background-color: blue;
+  color: white;
 }
 
 main {
@@ -50,7 +52,6 @@ footer {
 }
 
 
-
 nav {
   position: fixed;
   transition-duration: 1s;
@@ -64,7 +65,6 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* transition-duration: 1s; */
 }
 
 nav ul li a {
@@ -158,9 +158,12 @@ h2 {
 
 /* Applies styling to everything in .content */
 .content > * {
-  font-size: 15px;
-  line-height: 1.4em;
+  font-size: 14px;
+  line-height: 1.5em;
   word-spacing: 0.2em;
+  text-align: justify;
+  padding: 5px;
+  /* padding-right: 10px; */
   text-align: left;
 }
 

@@ -136,6 +136,7 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
   transition-duration: 0.5s;
   border-radius: 8px;
+  width: 500px;
 }
 
 /* #projects div {
