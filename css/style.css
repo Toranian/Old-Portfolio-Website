@@ -121,6 +121,11 @@ p {
   margin: 0px auto;
 }
 
+#resume .content {
+  text-align: center;
+}
+
+
 #projects .project {
   margin: 0 25%;
 }

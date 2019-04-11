@@ -22,4 +22,31 @@ function toggleNav() {
   console.log("clicked.")
 }
 
+// $(document).scroll(function() {
+//   var progress = ($(document).scrollTop());
+//   if (progess >= 1080) {
+//     document.querySelector("nav ul li a").style = {
+//       color: black;
+//     }
+//   }
+// })
+
+// $('a[href^="#"]').on('click', function (e) {
+//   e.preventDefault();
+
+//   var targetEle = this.hash;
+//   var $targetEle = $(targetEle);
+
+//   $('html, body').stop().animate({
+//       'scrollTop': $targetEle.offset().top
+//   }, 800, 'swing', function () {
+//       window.location.hash = targetEle;
+//   });
+// });
+
+$('#home').click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+});
+
 // console.log("Large display settings.")
