@@ -23,7 +23,9 @@ function toggleNav() {
 $(document).scroll(function() {
     var currentscroll = $(document).scrollTop();
     var distance = $("#about").offset().top;
-    if (currentscroll > distance) {
+    var screen_width = $(window.width());
+
+    if (currentscroll + 20 > distance && screen_width >= 1100) {
       $(".nav-link").css({
         "border-bottom":"2px solid black",
         "border-top":"none",
@@ -56,48 +58,17 @@ $(document).scroll(function() {
 })
 
 
-// $(function() {
-// });
+$(function() {
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
 
-// $(document).scroll(function() {
-//   var progress = $(document).scrollTop();
-//   if (progress >= 1080) {
-//     $("nav-link").css("border-bottom":"2px black solid");
-//     console.log("past 1080pixels");
-//   }
-//   console.log(progress)
-// })
+    var targetEle = this.hash;
+    var $targetEle = $(targetEle);
 
-
-// $(document).scroll(function() {
-//     console.log($(document).scrollTop());
-// })
-
-// var viewableOffset = $("#home").offset().top - $(window).scrollTop();
-
-// var distance = $("#home").offset().top;
-// console.log(distance)
-
-
-
-// $('a[href^="#"]').on('click', function (e) {
-//   e.preventDefault();
-
-//   var targetEle = this.hash;
-//   var $targetEle = $(targetEle);
-
-//   $('html, body').stop().animate({
-//       'scrollTop': $targetEle.offset().top
-//   }, 800, 'swing', function () {
-//       window.location.hash = targetEle;
-//   });
-// });
-
-// $('#home').click(function () {
-//   $("html, body").animate({ scrollTop: 0 }, 600);
-//   return false;
-// });
-
-
-
-// console.log("Large display settings.")
+    $('html, body').stop().animate({
+      'scrollTop': $targetEle.offset().top
+    }, 1000, 'swing', function () {
+      window.location.hash = targetEle;
+    });
+  });
+});

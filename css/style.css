@@ -116,9 +116,15 @@ p {
   text-align: center;
   padding: 10px;
   border-radius: 8px;
-  width: 100px;
+  width: 10vw;
   display: block;
   margin: 0px auto;
+  transition-duration: 0.6s;
+}
+
+#resume-link:hover {
+  background-color: rgba(0, 128, 202, 0.8) !important;
+
 }
 
 #resume .content {
