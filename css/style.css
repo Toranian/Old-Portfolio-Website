@@ -14,19 +14,6 @@ body {
     color: black;
 }
 
-#backgroundimage {
-  background-image: url("../img/isaacmorrow.jpg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  background-size: cover;
-  z-index: -1;
-  position: static;
-  transition-duration: 1s;
-  /* margin-bottom: 100vh; */
-}
-
 main {
   background-color: white;
   border-top-left-radius: 15px;
@@ -40,16 +27,28 @@ footer {
   color: white;
   font-weight: bold;
   text-align: center;
-  /* padding: 50px; */
   display: block;
 }
 
+/* Background image */
+#backgroundimage {
+  background-image: url("../img/isaacmorrow.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+  position: static;
+  transition-duration: 1s;
+  /* margin-bottom: 100vh; */
+}
 
-/* Navigation bar */
+/* Navigation bar on background*/
 nav {
     position: fixed;
     top: 0;
-    left: -353px;
+    left: 0;
     transition-duration: 1s;
 }
 
@@ -69,6 +68,10 @@ nav ul li {
     float: left;
 }
 
+nav ul li:last-child {
+  border-right: 2px white solid;
+}
+
 .nav-link {
     color: white;
     text-decoration: none;
@@ -78,19 +81,38 @@ nav ul li {
     display: block;
     border-bottom: 2px white solid;
     border-top: 2px white solid;
+    transition-duration: 0.5s;
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.383);
+  background-color: rgba(255, 255, 255, 0.383);
 }
 
-nav ul li:last-child {
-    border-right: 2px white solid;
+/* Add to navbar when over the about section. */
+.nav-link-new {
+    all: unset;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    display: block;
+    background-color: white;
+}
+
+.navbar-new {
+  left: 0;
+}
+
+.nav-link-new:hover {
+  background-color: #7fbfe4;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 h1 {
     font-size: 40px;
-    padding-top: 30px;
+    padding-top: 50px;
     margin: 0 auto;
 }
 
@@ -112,7 +134,7 @@ p {
 #resume-link {
   text-decoration: none;
   color: white;
-  background-color: rgba(0, 128, 202, 0.5) !important;
+  background-color: rgba(0, 128, 202, 0.5);
   text-align: center;
   padding: 10px;
   border-radius: 8px;
@@ -123,14 +145,9 @@ p {
 }
 
 #resume-link:hover {
-  background-color: rgba(0, 128, 202, 0.8) !important;
+  background-color: rgba(0, 128, 202, 0.8);
 
 }
-
-#resume .content {
-  text-align: center;
-}
-
 
 #projects .project {
   margin: 0 25%;
@@ -140,16 +157,9 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
   transition-duration: 0.5s;
   border-radius: 8px;
-  /* width: 33%; */
   display: inline-block;
 }
 
-/* #projects div {
-  background-color: rgba(0, 0, 0, 0.4);
-  transition-duration: 0.5s;
-  border-radius: 8px;
-  height: 300px;
-} */
 
 .project p {
   padding: 15px;
@@ -160,6 +170,3 @@ p {
   box-shadow: 10px 10px rgba(125, 125, 125, 0.7);
 }
 
-.test {
-  margin: 0 auto;
-}
