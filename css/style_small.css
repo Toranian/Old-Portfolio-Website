@@ -36,8 +36,6 @@ body {
   padding-top: 5px;
   padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.5);
-  /* border-left: 2px solid black; */
-  /* border-bottom: 2px solid black; */
   border-bottom-left-radius: 6px;
   cursor: pointer;
 }
@@ -88,7 +86,7 @@ footer {
 /* Navigation bar styling */
 nav {
   position: fixed;
-  transition-duration: 1s;
+  transition-duration: 0.85s;
   height: 100vh;
   width: 100%;
   left: -100%;
@@ -120,7 +118,7 @@ nav ul li a {
 /* Moves the navigation bar. Slides out from the left. */
 .movenav {
  left: 0;
- transition-duration: 1s;
+ transition-duration: 0.85s;
 }
 
 /* Headers */
