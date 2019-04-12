@@ -18,16 +18,15 @@ $(document).scroll(function() {
     if (currentscroll + 10 > distance) {
       $(".nav-link").addClass("nav-link-new");
       $("#chevron").hide();
-      $("nav").addClass("navbar-new");
+      $("#navbar").addClass("navbar-new");
     }
 
     else {
       $(".nav-link").removeClass("nav-link-new");
       $("#chevron").show();
-      $("nav").removeClass("navbar-new");
+      $("#navbar").removeClass("navbar-new");
     }
-
-})
+});
 
 // smooth scrolling.
 $(function() {
