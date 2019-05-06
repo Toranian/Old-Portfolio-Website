@@ -16,9 +16,10 @@ body {
 
 main {
   background-color: white;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   color: black;
+  margin-top: -10vh;
 }
 
 footer {
@@ -35,7 +36,7 @@ footer {
 /* Background image */
 #backgroundimage {
   background-image: url("../img/isaacmorrow.jpg");
-  height: 100vh;
+  height: 110vh;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -44,8 +45,6 @@ footer {
   position: static;
   transition-duration: 1s;
 }
-
-
 
 .github-button {
   /* background-color: ; */
@@ -56,6 +55,7 @@ footer {
   text-align: center;
   padding: 4px;
   transition-duration: 0.5s;
+  margin: 10px;
 }
 
 .github-button::before {
@@ -95,7 +95,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
   z-index: -2;
   transition: all 0.6s ease;
   width: 100%;
@@ -151,6 +151,13 @@ nav ul li {
 }
 
 /* Add to navbar when over the about section. */
+.navbar-new {
+  background-color: white;
+  transition-duration: 0.3s;
+  box-shadow: 0px 2px 20px grey;
+  border-bottom: unset;
+}
+
 .nav-link-new {
     all: unset;
     color: black;
@@ -159,19 +166,13 @@ nav ul li {
     cursor: pointer;
     transition-duration: 0.5s;
     display: block;
-}
-
-.navbar-new {
-  background-color: white;
-  transition-duration: 0.3s;
-  box-shadow: 0px 2px 20px grey;
-
+    z-index: 100;
 }
 
 .nav-link-new:hover {
   background-color: #7fbfe4;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  /* border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; */
 }
 
 h1 {
@@ -182,7 +183,7 @@ h1 {
 
 .content {
     font-size: 20px;
-    margin: 0 25%;
+    margin: 0 15vw;
     border-radius: 8px;
     padding: 15px;
     text-align: justify;
@@ -232,7 +233,7 @@ p {
 
 .project:hover {
   transform: translateY(-10px);
-  box-shadow: 10px 10px 20px rgba(125, 125, 125, 0.7);
+  box-shadow: 0px 10px 20px rgba(125, 125, 125, 0.7);
   /* border: none; */
   background-color: white;
 }
