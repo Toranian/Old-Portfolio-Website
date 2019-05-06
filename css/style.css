@@ -212,6 +212,14 @@ p {
   background-color: rgba(0, 128, 202, 0.8);
 }
 
+#project-section {
+  margin: 0 auto;
+}
+
+#project-center {
+  align-items: center;
+}
+
 /* Projects section */
 .project {
   transition-duration: 0.5s;
