@@ -1,122 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Code created by Isaac Morrow, 2019 -->
+  <!-- Code created by Isaac Morrow, 2019 -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Isaac Morrow</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Isaac Morrow</title>
 
-    <!-- Load jQuery using a CDN -->
-    <script
-			  src="https://code.jquery.com/jquery-3.4.0.min.js"
-			  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-			  crossorigin="anonymous">
-    </script>
+  <!-- Load jQuery using a CDN -->
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous">
+  </script>
+  <noscript>jQuery was not loaded.</noscript>
+  <!-- Load Parralax module -->
+  <script src="js/parralax/saparallax.js"></script>
+  <noscript>The Parralax file was not loaded.</noscript>
 
-    <!-- Load the JavaScript -->
-    <script src="js/main.js"></script>
-    <noscript>The JavaScript file was not able to load.</noscript>
+  <!-- Load the JavaScript -->
+  <script src="js/main.js"></script>
+  <noscript>The JavaScript file was not able to load.</noscript>
 
 
-    <!-- Load the CSS depending on the size of the screen -->
-    <link rel="stylesheet" href="css/style_small.css" media="screen and (max-width: 1000px)">
-    <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 1000px)">
+  <!-- Load the CSS depending on the size of the screen -->
+  <!-- <link rel="stylesheet" href="css/style_small.css" media="screen and (max-width: 1000px)"> -->
+  <link rel="stylesheet" href="css/style.css"
+    media="screen and (min-width: 1000px)">
 
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-  </head>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
 
 <body>
 
-    <!-- Navbar and background image -->
-    <header id="home">
-        <nav id="navbar">
-            <ul>
-                <li><a href="#home" onclick="toggleNav()" class="nav-link">Home</a></li>
-                <li><a href="#about" onclick="toggleNav()" class="nav-link">About</a></li>
-                <li><a href="#resume" onclick="toggleNav()" class="nav-link">Resume</a></li>
-                <li><a href="#projects" onclick="toggleNav()" class="nav-link">Projects</a></li>
-                <li><a href="#contact" onclick="toggleNav()" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="backgroundimage"></div>
+  <!-- Navbar and background image -->
+  <header id="home">
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home" onclick="toggleNav()" class="nav-link">Home</a></li>
+        <li><a href="#about" onclick="toggleNav()" class="nav-link">About</a>
+        </li>
+        <li><a href="#resume" onclick="toggleNav()" class="nav-link">Resume</a>
+        </li>
+        <li><a href="#projects" onclick="toggleNav()"
+            class="nav-link">Projects</a></li>
+        <li><a href="#contact" onclick="toggleNav()"
+            class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
 
-        <!-- Will only load for smaller screens -->
-        <div id="menu" onclick="toggleNav()">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
 
-    </header>
+    <!-- Background Image -->
+    <div data-sabglayer="0.2" id="backgroundimage"></div>
 
-    <!-- Contains the main contents of the website -->
-    <main>
-        <!-- About me -->
-        <section id="about">
-            <h1 align="center">Who am I?</h1>
-            <div class="content">
-                <p class="text">
-                        My name is Isaac Morrow, and I’m a front-end web developer. I’m currently enrolled in Timberline Secondary School and in grade 11. I have a passion for the outdoors, philosophy, and especially programming. At school, I excel at getting straight A’s and achieving the Principal's Honor Roll, while also understanding the subject matter. In March of 2019, I won the regional web development competition for skills Canada, after only 3 months since beginning my web development journey. I am excited to see how my skills will improve in later projects and creations.
-                </p>
-            </div>
-        </section>
+    <!-- Will only load for smaller screens -->
+    <div id="menu" onclick="toggleNav()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
 
-        <section id="contact">
-          <h1 align="center">Contact Information</h1>
-          <div class="content">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellendus consequatur molestias delectus ut adipisci dolores sint dolorum nobis dolor voluptatem maiores eos quod ea similique in laborum numquam odio, magnam error ipsam ipsa quidem. Eius a temporibus minus, laboriosam tempora officiis ducimus maxime ipsa aliquam, doloremque dignissimos quod aliquid velit nisi, voluptas libero enim. Mollitia non commodi repudiandae perferendis, nihil consequuntur eligendi officia voluptate nobis quaerat earum quidem quod error! Sint possimus eveniet illo quaerat itaque porro animi! Excepturi reiciendis dolores, omnis incidunt, aspernatur quae repellendus repellat totam dolorem fuga veniam. Debitis labore eligendi esse illum ipsum non repellat.
-            </p>
+  </header>
+
+
+  <!-- Contains the main contents of the website -->
+  <main>
+    <!-- About me -->
+    <section id="about">
+      <h1 align="center">Who am I?</h1>
+      <div class="content">
+        <p class="text">
+          My name is Isaac Morrow, and I’m a front-end web developer. I’m
+          currently enrolled in Timberline Secondary School and in grade 11. I
+          have a passion for the outdoors, philosophy, and especially
+          programming. At school, I excel at getting straight A’s and achieving
+          the Principal's Honor Roll, while also understanding the subject
+          matter. In March of 2019, I won the regional web development
+          competition for skills Canada, after only 3 months since beginning my
+          web development journey. I am excited to see how my skills will
+          improve in later projects and creations.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 align="center">Contact Information</h1>
+      <div class="content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          repellendus consequatur molestias delectus ut adipisci dolores sint
+          dolorum nobis dolor voluptatem maiores eos quod ea similique in
+          laborum numquam odio, magnam error ipsam ipsa quidem. Eius a
+          temporibus minus, laboriosam tempora officiis ducimus maxime ipsa
+          aliquam, doloremque dignissimos quod aliquid velit nisi, voluptas
+          libero enim. Mollitia non commodi repudiandae perferendis, nihil
+          consequuntur eligendi officia voluptate nobis quaerat earum quidem
+          quod error! Sint possimus eveniet illo quaerat itaque porro animi!
+          Excepturi reiciendis dolores, omnis incidunt, aspernatur quae
+          repellendus repellat totam dolorem fuga veniam. Debitis labore
+          eligendi esse illum ipsum non repellat.
+        </p>
+      </div>
+    </section>
+
+    <!--Resume Section-->
+    <section id="resume">
+      <h1 align="center">Resume</h1>
+      <div class="content">
+        <p style="text-align: center">If you're interested in hiring me, you can
+          download and view my resume here:</p>
+        <br>
+        <a href="text/resume.rtf" id="resume-link" align="center">Download</a>
+        <br><br>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="project-section">
+      <h1 align="center">My Projects</h1>
+      <!-- <div class="content"></div> -->
+      <div id="project-center">
+        <p>Here are some of my projects, you can check them out on Github or
+          view them live.</p>
+        <br><br>
+        <section>
+          <div class="project">
+            <img src="img/img_small/isaacmorrow.jpg" alt="Portfolio image"
+              id="portfolio-project">
+            <p>This is my portfolio website that I built using pure HTML and
+              CSS.</p>
+            <a href="https://github.com/Toranian/toranian.github.io"
+              class="btn">Github</a>
           </div>
-        </section>
 
-        <!--Resume Section-->
-        <section id="resume">
-            <h1 align="center">Resume</h1>
-            <div class="content">
-                <p style="text-align: center">If you're interested in hiring me, you can download and view my resume here:</p>
-                <br>
-                <a href="text/resume.rtf" id="resume-link" align="center">Download</a>
-                <br><br>
-            </div>
-        </section>
+          <div class="project">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+              dolorem incidunt, error veritatis modi. Quos libero quas nobis rem
+              maxime, modi. Nesciunt qu</p>
+          </div>
 
-        <section id="project-section">
-          <h1 align="center">My Projects</h1>
-            <!-- <div class="content"></div> -->
-            <div id="project-center">
-              <p>Here are some of my projects, you can check them out on Github or view them live.</p>
-              <br><br>
-              <section>
-                <div class="project">
-                  <img src="img/img_small/isaacmorrow.jpg" alt="Portfolio image" id="portfolio-project">
-                  <p>This is my portfolio website that I built using pure HTML and CSS.</p>
-                  <a href="https://github.com/Toranian/toranian.github.io" class="btn">Github</a>
-                </div>
-
-                <div class="project">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolorem incidunt, error veritatis modi. Quos libero quas nobis rem maxime, modi. Nesciunt qu</p>
-                </div>
-
-                <div class="project">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolorem incidunt, error veritatis modi. Quos libero quas nobis rem maxime, modi. Nesciunt qu</p>
-                </div>
-
-              </section>
-            </div>
-
+          <div class="project">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+              dolorem incidunt, error veritatis modi. Quos libero quas nobis rem
+              maxime, modi. Nesciunt qu</p>
+          </div>
 
         </section>
+      </div>
 
-    </main>
 
-    <footer>
-      <p>
-        Copyright © Isaac Morrow 2019
-      </p>
-    </footer>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Copyright © Isaac Morrow 2019
+    </p>
+  </footer>
 
 </body>
+
 </html>

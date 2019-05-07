@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>jQuery saparallax.js Plugin Demo</title>
+
+        <link rel="stylesheet" type="text/css" href="http://cdn.moritzzimmer.com/fonts/MoritzSansDURL/MoritzSansDURL_all.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body { background-color:#fafafa; font-family:'Open Sans';}
+            figure{
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+            }
+            img{
+                margin-top: -300px;
+                width: 100%;
+
+            }
+            .half{
+                opacity: 0.4;
+            }
+
+            body{
+                height: 100%;
+                width: 100%;
+            }
+
+            #wrapper{
+                font-family: 'Moritz Sans Web', 'Moritz Sans', Verdana, sans-serif;
+                padding: 0 20%;
+                color: darkblue;
+                line-height: 1.5em;
+            }
+            ul li{
+                display: inline-block;
+                background-color: darkblue;
+                padding: 1%;
+            }
+            ul{
+                background-color: darkblue;
+                padding: 0;
+            }
+            a, a:visited, a:active, a:hover{
+                color: white;
+            }
+            article{
+                margin: 0;
+                padding: 0;
+                border-width: 0 2px 2px 2px;
+                border-color: goldenrod;
+                border-style: solid;
+                max-width: 900px;
+            }
+            h1{
+                margin: 4% 0 4% 0;
+            }
+            span{
+                background: white;
+                position: absolute;
+                width: 30px;
+                height: 2.20em;
+                text-align: center;
+            }
+            h3{
+                background: goldenrod;
+                color: white;
+                padding: 0 1% 2% 40px;
+
+            }
+            span{
+                background: goldenrod;
+                color: white;
+                padding: 2px 1%;
+                font-weight: 400;
+                font-style: italic;
+            }
+            p{
+                padding: 1%;
+                padding-left: 30px;
+            }
+            p span{
+                position: relative;
+            }
+            footer{
+                border-top: 2px solid black;
+                width: 100%;
+                margin-top: 75px;
+            }
+            footer h2{
+                font-weight: 400;
+            }
+            footer h2 a, footer h2 a:visited, footer h2 a:active, footer h2 a:hover{
+                color: black;
+                font-weight: 700;
+                text-decoration: none;
+            }
+            .saexpand-arrow{
+                color: #333;
+            }
+           aside{
+               width: 120px; height: auto; font-size: 20px; font-style: italic; font-weight: 600; background: darkblue; color: goldenrod; padding: 20px;
+            }
+            .scrollspeed{
+                display: block;
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+                height: auto;
+                width: auto;
+                color: white;
+                background: darkblue;
+                line-height: 1em;
+                padding: 1em 0 ;
+            }
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+        <header>
+            <h1>jQuery saparallax.js Plugin Demo</h1>
+            <div class="jquery-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+        </header>
+
+        <main>
+             <aside style="position: absolute; top:50; left:10px;" data-sabglayer="1.5">
+                 Works on absolutely and relatively positioned elements!
+                 <div class="scrollspeed">(this element has a data-bgscroll attribute of 1.5)</div>
+            </aside>
+
+            <!-- collection of sections -->
+            <article>
+
+                <section id="one">
+                    <h3>About</h3>
+                    <p>
+                        <br><br>
+                        SA Parallax works simply by inluding jQuery, the saparallax.js file, and the data-sabglayer attribute to any dom element.
+                        <br><br>
+                        By giving a value to the <span>data-sabglayer</span> attribute, you can control the scroll speed of the elements. Enter a number from <span>0</span> (same as foreground) to <span>2</span> (will appear static).
+
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <h3>Sample Application</h3>
+
+                  <figure>
+                        <img data-sabglayer src="https://unsplash.it/1024/765?image=325" alt="Dominik Martin">
+                    </figure>
+                    <div class="scrollspeed">(this element has a no data-bgscroll attribute set, therefore defaults to 1)</div>
+                    <br>
+                    <p><b>Above is a in <span>image</span> in a <span>figure</span> element. the image is roughly twice the height as the figure, the figure is styled with <span>overflow:hidden</span>. Applied to the image within the figure is the data-sabglayer attribute, which causes each element with that style applied to scroll slower than the foreground.<br><br></b></p>
+                    <p data-sabglayer="0.5"><b>Of course you can apply the <span>data-bgscroll</span> attribute to <span>any</span> Dom element, just be careful, you might get results that look kind of weird, like this </b></p>
+                    <p class="half">Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. </p>
+                    <p class="half">Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. </p>
+                    <p class="half">Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. </p>
+                    <p class="half">Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. </p>
+                    <p class="half">Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. </p>
+                </section>
+            </article>
+
+        </main>
+        </div>
+
+        <footer>
+            <h2>Copyright &copy; 2016 by <a href="http://www.moritzzimmer.com" target="_blank" rel="nofollow">Moritz Zimmer</a>.</h2>
+        </footer>
+
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="saparallax.js"></script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </body>
+</html>

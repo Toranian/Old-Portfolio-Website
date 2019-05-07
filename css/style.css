@@ -3,15 +3,15 @@
 /* font-family: 'Questrial', sans-serif; */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    /* background-color: black; */
-    color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  /* background-color: black; */
+  color: black;
 }
 
 main {
@@ -36,14 +36,15 @@ footer {
 /* Background image */
 #backgroundimage {
   background-image: url("../img/isaacmorrow.jpg");
-  height: 110vh;
+  height: 150vh;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   z-index: -1;
   position: static;
   transition-duration: 1s;
+  margin-top: -30vh;
 }
 
 .github-button {
@@ -68,9 +69,9 @@ footer {
   width: 1000%;
 
 }
+
 .github-button:hover {
   bottom: 100%;
-
 }
 
 .btn {
@@ -87,6 +88,8 @@ footer {
   margin: auto;
   border-radius: 20px;
   z-index: 1;
+  margin: 10px;
+  margin-bottom: 15px;
 }
 
 .btn::before {
@@ -97,27 +100,27 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -2;
-  transition: all 0.6s ease;
+  transition: all 0.8s ease;
   width: 100%;
   height: 0;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .btn:hover::before {
-  height: 380%;
+  height: 700%;
   color: white;
 }
 
 
 /* Navigation bar on background*/
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition-duration: 0.3s;
-    border-bottom: 1px white solid;
-    width: 100%;
-    background-color: rgb(255, 245, 227, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition-duration: 0.3s;
+  border-bottom: 1px white solid;
+  width: 100%;
+  background-color: rgb(255, 245, 227, 0.15);
 }
 
 nav:hover {
@@ -125,25 +128,25 @@ nav:hover {
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    width: 100%;
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
 }
 
 nav ul li {
-    color: white;
-    display: inline;
-    float: left;
+  color: white;
+  display: inline;
+  float: left;
 }
 
 .nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    cursor: pointer;
-    transition-duration: 0.5s;
-    display: block;
-    transition-duration: 0.5s;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  display: block;
+  transition-duration: 0.5s;
 }
 
 .nav-link:hover {
@@ -159,14 +162,14 @@ nav ul li {
 }
 
 .nav-link-new {
-    all: unset;
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-    cursor: pointer;
-    transition-duration: 0.5s;
-    display: block;
-    z-index: 100;
+  all: unset;
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  display: block;
+  z-index: 100;
 }
 
 .nav-link-new:hover {
@@ -176,17 +179,17 @@ nav ul li {
 }
 
 h1 {
-    font-size: 40px;
-    padding-top: 50px;
-    margin: 0 auto;
+  font-size: 40px;
+  padding-top: 50px;
+  margin: 0 auto;
 }
 
 .content {
-    font-size: 20px;
-    margin: 0 15vw;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: justify;
+  font-size: 20px;
+  margin: 0 15vw;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: justify;
 }
 
 p {
@@ -230,6 +233,14 @@ p {
   align-items: center;
 }
 
+.project:last-child {
+  margin-left: 1vw;
+}
+
+.project:first-child {
+  margin-right: 1vw;
+}
+
 /* Projects section */
 .project {
   transition-duration: 0.5s;
@@ -238,7 +249,8 @@ p {
   width: 30%;
   border: 2px black solid;
   background-color: white;
-  margin-right: 1vw;
+  /* margin-right: 1vw; */
+  text-align: center;
 }
 
 .project:hover {
