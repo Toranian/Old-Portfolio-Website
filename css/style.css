@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
-/* font-family: 'Questrial', sans-serif; */
 
 * {
     margin: 0;
@@ -10,7 +9,6 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    /* background-color: black; */
     color: black;
 }
 
@@ -73,16 +71,15 @@ footer {
 
 .github-button::before {
     background-color: #7fbfe4;
-    /* bottom: -100%; */
     content: "";
-    border: 2px solid red;
     width: 10px;
-    height: 1000%;
-    width: 1000%;
+    height: 100%;
+    width: 100%;
 
 }
 
 .github-button:hover {
+    transition-duration: 0.2s;
     bottom: 100%;
 }
 
@@ -266,7 +263,7 @@ p {
 }
 
 .project:hover {
-    transform: translateY(-1vh);
+    transform: translateY(-0.5vh);
     box-shadow: 0px 10px 20px rgba(125, 125, 125, 0.7);
     background-color: white;
 }
