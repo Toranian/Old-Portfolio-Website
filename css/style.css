@@ -40,7 +40,9 @@ footer {
     width: 100%;
     background-size: cover;
     z-index: -1;
-    position: static;
+    position: fixed;
+    left: 0;
+    top:0;
     transition-duration: 1s;
 }
 
@@ -118,7 +120,6 @@ footer {
     color: white;
 }
 
-
 /* Navigation bar on background*/
 nav {
     position: fixed;
@@ -183,8 +184,6 @@ nav ul li {
 
 .nav-link-new:hover {
     background-color: #7fbfe4;
-    /* border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px; */
 }
 
 h1 {
