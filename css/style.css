@@ -58,7 +58,6 @@ footer {
 }
 
 .github-button {
-    /* background-color: ; */
     border: 2px solid #7fbfe4;
     border-radius: 4px;
     text-decoration: none;
@@ -75,7 +74,6 @@ footer {
     width: 10px;
     height: 100%;
     width: 100%;
-
 }
 
 .github-button:hover {
@@ -167,8 +165,9 @@ nav ul li {
     background-color: white;
     transition-duration: 0.3s;
     /* box-shadow: 0px 2px 20px grey; */
-    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
     border-bottom: unset;
+    z-index: 100;
 }
 
 .nav-link-new {
@@ -243,16 +242,16 @@ p {
     align-items: center;
 }
 
-.project:last-child {
+.project-card:last-child {
     margin-left: 1vw;
 }
 
-.project:first-child {
+.project-card:first-child {
     margin-right: 1vw;
 }
 
 /* Projects section */
-.project {
+.project-card {
     transition-duration: 0.5s;
     border-radius: 8px;
     display: inline-block;
@@ -263,13 +262,14 @@ p {
     text-align: center;
 }
 
-.project:hover {
+.project-card:hover {
     transform: translateY(-0.5vh);
-    box-shadow: 0px 10px 20px rgba(125, 125, 125, 0.7);
+    /* box-shadow: 0px 10px 20px rgba(125, 125, 125, 0.7); */
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
     background-color: white;
 }
 
-.project p {
+.project-card p {
     padding: 15px;
 }
 
