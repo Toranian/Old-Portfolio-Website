@@ -40,7 +40,7 @@ footer {
     width: 100%;
     background-size: cover;
     z-index: -1;
-    position: fixed;
+    position: static;
     left: 0;
     top:0;
     transition-duration: 1s;
