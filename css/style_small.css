@@ -144,17 +144,6 @@ h2 {
   font-size: 16px;
 }
 
-#resume-link {
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0, 128, 202, 0.5) !important;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  width: 100px;
-  display: block;
-  margin: 0px auto;
-}
 
 /* Creates the padding and stuff for the content */
 .content {
@@ -183,7 +172,8 @@ h2 {
 } */
 
 #project-section {
-  text-align: justify;
+  text-align: center;
+  padding: 10px;
 }
 
 .project-card {
@@ -196,6 +186,10 @@ h2 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background-color: rgb(247, 247, 247);
   border: 2px solid rgb(240, 240, 240);
+}
+
+.project-card p {
+  padding: 5px;
 }
 
 .project-card:last-child {
@@ -222,4 +216,22 @@ h2 {
   margin-left: 30%;
   margin-top: 5px;
 } */
+
+.btn {
+  /* width: 70%; */
+  background-color: #7fbfe4;
+  padding: 8px 10px;
+  display: block;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 25vw;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.btn:hover {
+  background-color: #4d8cb1;
+}
 
