@@ -161,26 +161,14 @@ h2 {
   padding: 10px;
 }
 
-/* DELETE THIS LATER */
-/* #projects {
-  display: none;
-}
 
-#project-section {
-  visibility: hidden;
-  display: none;
-} */
-
-#project-section {
-  text-align: center;
-  /* padding: 10px; */
-}
 
 .project-card {
   width: 90vw;
   /* margin-right: 5vw;
   margin-left: 5vw; */
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   /* border-radius: 5px; */
   border-radius: 10px;
   margin-bottom: 5vh;
@@ -205,8 +193,6 @@ h2 {
   
   border-top-right-radius: 9px;
   border-top-left-radius: 9px; 
-  
-
 }
 
 /* #portfolio-project {
