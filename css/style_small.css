@@ -11,7 +11,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     background-color: black;
-    color: black;
+    color: white;
 }
 
 /* #buffer {
@@ -79,12 +79,21 @@ main {
 }
 
 footer {
-  bottom: 0;
-  height: 50px;
-  color: white;
-  font-weight: bold;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
   text-align: center;
-  display: block;
+  background-color: #7fbfe4;
+  width: 100%;
+  /* border-top-right-radius: 8px;
+  border-top-left-radius: 8px; */
+  /* margin-top: -10px;
+   */
+   bottom: 2vh;
+}
+
+footer p {
+  font-size: 14px;
+  color: white;
 }
 
 /* Navigation bar styling */
@@ -164,11 +173,53 @@ h2 {
 }
 
 /* DELETE THIS LATER */
-#projects {
+/* #projects {
   display: none;
 }
 
 #project-section {
   visibility: hidden;
   display: none;
+} */
+
+#project-section {
+  text-align: justify;
 }
+
+.project-card {
+  width: 90vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  /* border-radius: 5px; */
+  border-radius: 10px;
+  margin-bottom: 5vh;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: rgb(247, 247, 247);
+  border: 2px solid rgb(240, 240, 240);
+}
+
+.project-card:last-child {
+  visibility: hidden;
+  display: none;
+}
+
+/* #portfolio-project {
+  width: 100%;
+  max-height: 100%; 
+  background-size: contain;
+  
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px; 
+  
+
+} */
+
+#portfolio-project {
+  border-radius: 100%;
+  height: 30vh;
+  width: 30vh;
+  background-size: cover;
+  margin-left: 30%;
+  margin-top: 5px;
+}
+
