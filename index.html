@@ -12,7 +12,7 @@
   <!-- Load jQuery using a CDN -->
   <script src="https://code.jquery.com/jquery-3.4.0.min.js"
     integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
-    </script>
+  </script>
   <noscript>jQuery was not loaded.</noscript>
 
   <!-- Load Parralax module -->
@@ -25,6 +25,8 @@
 
   <!-- Load the CSS depending on the size of the screen -->
   <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 1000px)">
+  
+  <!-- TODO: Make sure to uncomment this line when pushing to GitHub! -->
   <link rel="stylesheet" href="css/style_small.css" media="screen and (max-width: 1000px)">
 
 </head>
@@ -40,12 +42,11 @@
     <nav id="navbar">
       <ul>
         <li><a href="#home" onclick="toggleNav()" class="nav-link">Home</a></li>
-        <li><a href="#about" onclick="toggleNav()" class="nav-link">About</a>
+        <li><a href="#about" onclick="toggleNav()" class="nav-link">About</a></li>
         <li><a href="#contact" onclick="toggleNav()" class="nav-link">Contact</a></li>
-        </li>
-        <li><a href="#resume" onclick="toggleNav()" class="nav-link">Resume</a>
-        </li>
+        <li><a href="#resume" onclick="toggleNav()" class="nav-link">Resume</a></li>
         <li><a href="#project-section" onclick="toggleNav()" class="nav-link">Projects</a></li>
+        <li><a href="https://github.com/Toranian" onclick="toggleNav()" id="nav-link-right">GitHub</a></li>
       </ul>
     </nav>
 
@@ -100,7 +101,7 @@
         <p style="text-align: center">If you're interested in hiring me, you can
           view my resume here:
         </p>
-        <a href="https://docs.google.com/document/d/14tpdEVd0z3PCesYK9TpTvdfYWa__QV4rF-kSj0-4K48/edit?usp=sharing" class="btn" align="center">Resume</a>
+        <a href="https://docs.google.com/document/d/14tpdEVd0z3PCesYK9TpTvdfYWa__QV4rF-kSj0-4K48/edit?usp=sharing" class="btn" align="center" target="_blank">Resume</a>
         <br><br>
       </div>
     </section>
@@ -131,7 +132,8 @@
           </div>
 
           <div class="project-card">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
               dolorem incidunt, error veritatis modi. Quos libero quas nobis rem
               maxime, modi. Nesciunt qu
             </p>
@@ -142,15 +144,13 @@
         </section>
       </div>
     </section>
-
-    <footer>
-      <p>
-        Copyright © Isaac Morrow 2019
-      </p>
-    </footer>
-    
   </main>
-
+  
+  <footer>
+    <div id="contacts" style="top: 1vh; position: relative;">
+        Copyright © Isaac Morrow 2019
+    </div>
+  </footer>
 
 </body>
 
