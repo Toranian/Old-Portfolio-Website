@@ -17,13 +17,11 @@ $(document).scroll(function() {
 
     if (currentscroll + 10 > distance) {
       $(".nav-link").addClass("nav-link-new");
-      $("#chevron").hide();
       $("#navbar").addClass("navbar-new");
     }
 
     else {
       $(".nav-link").removeClass("nav-link-new");
-      $("#chevron").show();
       $("#navbar").removeClass("navbar-new");
     }
 });
