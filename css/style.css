@@ -21,19 +21,23 @@ main {
 }
 
 footer {
-    bottom: 0;
-    height: 50px;
-    color: white;
-    font-weight: bold;
+    /* bottom: 0; */
+    font-family: "lato", sans-serif;
+    font-size: 18px;
+    height: 4vh;
+    color: black;
     text-align: center;
-    display: block;
-    margin-top: 1000px;
-    background-color: white;
+    /* display: block; */
+    float: bottom;
+    background-color: rgb(172, 172, 172);
+    text-align: center;
+    width: 100vw;
+    border: 2px solid red;
 }
 
 /* Background image */
 #background-image {
-    background-image: url("../img/isaacmorrow.jpg");
+    background-image: url("../img/isaacmorrow_cleaned.jpg");
     height: 110vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,17 +151,26 @@ nav ul li {
     float: left;
 }
 
-.nav-link {
+.nav-link, #nav-link-right {
     color: white;
     text-decoration: none;
     padding: 15px;
     cursor: pointer;
-    transition-duration: 0.5s;
     display: block;
     transition-duration: 0.5s;
 }
 
-.nav-link:hover {
+#nav-link-right {
+    position: absolute;
+    right: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    /* background-color: aqua;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw; */
+}
+
+.nav-link:hover, #nav-link-right:hover {
     background-color: rgba(255, 255, 255, 0.383);
 }
 
