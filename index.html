@@ -29,6 +29,10 @@
   <!-- TODO: Make sure to uncomment this line when pushing to GitHub! -->
   <link rel="stylesheet" href="css/style_small.css" media="screen and (max-width: 1000px)">
 
+  <!-- Load font-awesome for custom icons. -->
+  <script src="https://kit.fontawesome.com/0ac3f6f576.js"></script>
+
+
 </head>
 
 
@@ -46,7 +50,10 @@
         <li><a href="#contact" onclick="toggleNav()" class="nav-link">Contact</a></li>
         <li><a href="#resume" onclick="toggleNav()" class="nav-link">Resume</a></li>
         <li><a href="#project-section" onclick="toggleNav()" class="nav-link">Projects</a></li>
-        <li><a href="https://github.com/Toranian" onclick="toggleNav()" id="nav-link-right">GitHub</a></li>
+        <li><a href="https://github.com/Toranian" onclick="toggleNav()" id="nav-link-right">
+          <i class="fas fa-github fa-5" aria-hidden="true"></i>
+          GitHub
+        </a></li>
       </ul>
     </nav>
 
@@ -98,10 +105,21 @@
     <section id="resume">
       <h1 align="center">Resume</h1>
       <div class="content">
-        <p style="text-align: center">If you're interested in hiring me, you can
-          view my resume here:
+
+        <p style="text-align: center">
+          If you're interested in hiring me, you can download 
+          or view view my resume here:
         </p>
-        <a href="https://docs.google.com/document/d/14tpdEVd0z3PCesYK9TpTvdfYWa__QV4rF-kSj0-4K48/edit?usp=sharing" class="btn" align="center" target="_blank">Resume</a>
+
+        <br>
+
+
+
+        <a href="https://docs.google.com/document/d/14tpdEVd0z3PCesYK9TpTvdfYWa__QV4rF-kSj0-4K48/edit?usp=sharing" class="btn" align="center" target="_blank" style="margin: auto 20vw">
+          <i class="fas fa-eye"></i>
+          View
+        </a>
+
         <br><br>
       </div>
     </section>
@@ -147,7 +165,15 @@
   </main>
   
   <footer>
-    <div id="contacts" style="top: 1vh; position: relative;">
+
+    <div id="contact-icons">
+      <ul>
+        <li>Instagram</li>
+        <li>Linked In</li>
+      </ul>
+    </div>
+
+    <div id="copyright" style="top: 1vh; position: relative;">
         Copyright © Isaac Morrow 2019
     </div>
   </footer>
